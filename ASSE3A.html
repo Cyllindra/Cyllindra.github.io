@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="nelski.css">
+</head>
+
+<body>
+
+<script src="nelski.js"></script>
+<script src="ASSE3A.js"></script>
+
+<h1>A.SSE.A.3.A Factoring Quadratics</h1>
+<p>Consider the following polynomial.</p>
+
+<div id="problem">
+
+<script>
+print(poly);
+</script>
+
+<p>Factor it.</p>
+</div>
+
+<div id="hint" style="display: none">
+<h1>Hint</h1>
+
+Consider the coefficient in front of x: <script>print(b)</script>, <br />
+and the coefficient at the end: <script>print(c)</script>.<br /><br />
+We need two numbers that will <b><u>add up to <script>print(b)</script></u></b> and will <b><u>multiply together to make <script>print(c)</script></u></b>.<br /><br />
+Notice: (<script>print(x)</script>) + (<script>print(y)</script>) = <script>print(b)</script>, and (<script>print(x)</script>) &times; (<script>print(y)</script>) = <script>print(c)</script>.
+
+</div>
+<br />
+<button onclick="show('hint')">Show/Hide Hint</button>
+<br />
+<div id="answer" style="display: none">
+<h1>Answer</h1>
+
+<script>
+print(ans);
+</script>
+</div>
+<br />
+<button onclick="show('answer')">Show/Hide Answer</button>
+
+</body>
+</html>
