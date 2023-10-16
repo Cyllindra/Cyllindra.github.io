@@ -31,4 +31,4 @@ sign2 = " + ";
 if (x < 0){sign1 = " - ";}
 if (y < 0){sign2 = " - ";}
 
-ans = "(x" + sign1 + ax + ")(x" + sign2 + ay + ")";
+ans = "x = " + x + ", " + y;
