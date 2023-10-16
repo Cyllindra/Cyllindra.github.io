@@ -28,7 +28,7 @@ else{poly = "x<sup>2</sup>" + sign1 + ab + "x" + sign2 + ac;}
 sign1 = " + ";
 sign2 = " + ";
 
-if (x < 0){sign1 = " - ";}
-if (y < 0){sign2 = " - ";}
+if (x > 0){sign1 = " - ";}
+if (y > 0){sign2 = " - ";}
 
 ans = "x = " + x + ", " + y;
