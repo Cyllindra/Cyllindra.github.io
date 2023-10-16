@@ -22,7 +22,7 @@ if (c < 0){
   sign2 = " - ";
 }
 
-if (b == 0){poly = "x<sup>2</sup>" + sign2 + c;}
+if (b == 0){poly = "x<sup>2</sup>" + sign2 + ac;}
 else{poly = "x<sup>2</sup>" + sign1 + ab + "x" + sign2 + ac;}
 
 sign1 = " + ";
