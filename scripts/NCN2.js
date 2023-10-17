@@ -25,7 +25,7 @@ if (d <= 0)
   dsign = " - ";
 }
 
-ab = Math.abs(b)
-ad = Math.abs(d)
+ab = Math.abs(b);
+ad = Math.abs(d);
 
-numbers = a + bsign + ab + "i and " + c + dsign + ad + "i"
+numbers = a + bsign + ab + "i and " + c + dsign + ad + "i";
