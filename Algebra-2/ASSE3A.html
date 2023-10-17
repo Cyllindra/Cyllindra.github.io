@@ -1,55 +1,67 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <title>A.SSE.A.3.A — Factoring Quadratics</title>
 
-    <link rel="stylesheet" href="../css/main.css">
+<head>
+  <title>A.SSE.A.3.A — Factoring Quadratics</title>
 
-    <script src="../scripts/main.js"></script>
-    <script src="../scripts/ASSE3A.js"></script>  
+  <link rel="stylesheet" href="../css/main.css">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+  <script src="../scripts/main.js"></script>
+  <script src="../scripts/ASSE3A.js"></script>
 
-    <!-- The loading of KaTeX is deferred to speed up page rendering -->
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+    integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
 
-    <!-- To automatically render math in text elements, include the auto-render extension: -->
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
-        onload="renderMathInElement(document.body);"></script>
-  </head>
+  <!-- The loading of KaTeX is deferred to speed up page rendering -->
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+    integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+    crossorigin="anonymous"></script>
 
-  <body>
-    <h1>A.SSE.A.3.A Factoring Quadratics</h1>
-    <p>Consider the following polynomial.</p>
+  <!-- To automatically render math in text elements, include the auto-render extension: -->
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+</head>
 
-    <div id="problem">
-      <script>print("\\[" + poly + "\\]");</script>
+<body>
+  <h1>A.SSE.A.3.A Factoring Quadratics</h1>
+  <p>Consider the following polynomial.</p>
 
-      <p>Factor it.</p>
+  <div id="problem">
+    <script>print("\\[" + poly + "\\]");</script>
+
+    <p>Find the zeros.</p>
+  </div>
+
+  <details>
+    <summary>Hint</summary>
+    <div class="details_section">
+      Consider the coefficient in front of \(x\):
+      <script>print(b)</script>,
+      and the coefficient at the end:
+      <script>print(c)</script>.
     </div>
-    
-    <details>
-      <summary>Hint</summary>
-      <div class="details_section">
-        Consider the coefficient in front of \(x\): <script>print(b)</script>,
-        and the coefficient at the end: <script>print(c)</script>.
-      </div>
-      <div class="details_section">
-        We need two numbers that will <b><u>add up to <script>print(b)</script></u></b>
-        and will <b><u>multiply together to make <script>print(c)</script></u></b>.
-      </div>
+    <div class="details_section">
+      We need two numbers that will <b><u>add up to
+          <script>print(b)</script>
+        </u></b>
+      and will <b><u>multiply together to make
+          <script>print(c)</script>
+        </u></b>.
+    </div>
 
-      <div class="details_section">
-        Notice: <script>print(`\\(${x} ${sign1} ${y} = ${y}\\)`)</script>, and
-        <script>print(`\\(${x} \\cdot ${y} = ${c}\\)`)</script>.
-      </div>
-    </details>
+    <div class="details_section">
+      Notice:
+      <script>print(`\\(${x} ${sign1} ${y} = ${y}\\)`)</script>, and
+      <script>print(`\\(${x} \\cdot ${y} = ${c}\\)`)</script>.
+    </div>
+  </details>
 
-    <br />
+  <br />
 
     \(x=\) <input id="val_1" type="number" size="5" />\(,\) <input id="val_2" type="number" size="5" /> <button onclick="check()">Check</button>
 
-    <p id="result"></p>
+    <div id="result" />
   </body>
 </html>
