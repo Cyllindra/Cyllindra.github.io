@@ -1,10 +1,14 @@
 // y = ax^2 + bx + c
 
-x = Math.ceil(Math.random()*20-10);
-y = Math.ceil(Math.random()*20-10);
+x = Math.ceil(Math.random() * 20 - 10);
+y = Math.ceil(Math.random() * 20 - 10);
 
-if (x <= 0){x = x - 1;}
-if (y <= 0){y = y - 1;}
+if (x <= 0) {
+  x = x - 1;
+}
+if (y <= 0) {
+  y = y - 1;
+}
 
 b = x + y;
 c = x * y;
@@ -12,27 +16,33 @@ c = x * y;
 sign1 = "+";
 sign2 = "+";
 
-if (b < 0){sign1 = "";}
-if (c < 0){sign2 = "";}
+if (b < 0) {
+  sign1 = "";
+}
+if (c < 0) {
+  sign2 = "";
+}
 
 display_b = `${sign1} ${b}x`;
 display_c = `${sign2} ${c}`;
 
-if (b == 1){display_b = "+x";}
-if (b == -1){display_b = "-x";}
-if (b == 0){display_b = "";}
-if (c == 0){display_c = "";}
-
+if (b == 1) {
+  display_b = "+x";
+}
+if (b == -1) {
+  display_b = "-x";
+}
+if (b == 0) {
+  display_b = "";
+}
+if (c == 0) {
+  display_c = "";
+}
 
 poly = `x^2 ${display_b} ${display_c} = 0`;
 
-console.log("Polynomial: " + poly);
-
-ans_1 = x*-1;
-ans_2 = y*-1;
-
-console.log("Answer 1: " + ans_1);
-console.log("Answer 2: " + ans_2);
+ans_1 = x * -1;
+ans_2 = y * -1;
 
 function check() {
   val_1 = document.getElementById("val_1").value;
@@ -52,9 +62,11 @@ function check() {
 }
 
 function correctDisplay() {
-  document.getElementById("result").innerHTML = "<span style='color: green; font-style: italic;'>Correct!</span> Click <a href='ASSE3A.html'>here</a> for a new problem.";
+  document.getElementById("result").innerHTML =
+    "<span style='color: green; font-style: italic;'>Correct!</span> Click <a href='ASSE3A.html'>here</a> for a new problem.";
 }
 
 function incorrectDisplay() {
-  document.getElementById("result").innerHTML = "<span style='color: red; font-style: italic;'>Incorrect!</span>";
+  document.getElementById("result").innerHTML =
+    "<span style='color: red; font-style: italic;'>Incorrect!</span>";
 }
