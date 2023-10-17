@@ -36,5 +36,6 @@ if (a*d + b*c <= 0)
 {
   sign = " - ";
 }
-
-ans = a*c-b*d + sign + Math.abs(a*d + b*c) + "i";
+real = a*c-b*d;
+imag = Math.abs(a*d + b*c);
+ans = real + sign + imag + "i";
