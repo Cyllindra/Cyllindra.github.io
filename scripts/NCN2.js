@@ -29,3 +29,10 @@ ab = Math.abs(b);
 ad = Math.abs(d);
 
 numbers = a + bsign + ab + "i and " + c + dsign + ad + "i";
+
+if (a*d + b*c <= 0)
+{
+  sign = " = ";
+}
+
+answer = a*c-b*d + sign + Math.abs(a*d + b*c) + "i";
