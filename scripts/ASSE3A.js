@@ -1,3 +1,5 @@
+// y = ax^2 + bx + c
+
 x = Math.ceil(Math.random()*20-10);
 y = Math.ceil(Math.random()*20-10);
 
@@ -7,28 +9,23 @@ if (y <= 0){y = y - 1;}
 b = x + y;
 c = x * y;
 
-ax = Math.abs(x);
-ay = Math.abs(y);
-ab = Math.abs(b);
-ac = Math.abs(c);
+sign1 = "+";
+sign2 = "+";
 
-sign1 = " + ";
-sign2 = " + ";
+if (b < 0){sign1 = "";}
+if (c < 0){sign2 = "";}
 
-if (b < 0){
-  sign1 = " - ";
-}
-if (c < 0){
-  sign2 = " - ";
-}
+display_b = `${sign1} ${b}x`;
+display_c = `${sign2} ${c}`;
 
-if (b == 0){poly = "x<sup>2</sup>" + sign2 + ac + " = 0";}
-else{poly = "x<sup>2</sup>" + sign1 + ab + "x" + sign2 + ac + " = 0";}
+if (b == 1){display_b = "x";}
+if (b == -1){display_b = "-x";}
+if (b == 0){display_b = "";}
+if (c == 0){display_c = "";}
 
-sign1 = " + ";
-sign2 = " + ";
 
-if (x > 0){sign1 = " - ";}
-if (y > 0){sign2 = " - ";}
+poly = `x^2 ${display_b} ${display_c} = 0`;
+
+console.log("Polynomial: " + poly);
 
 ans = "x = " + x*-1 + ", " + y*-1;
