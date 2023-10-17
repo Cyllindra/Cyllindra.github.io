@@ -12,4 +12,4 @@ if (c <= 0){d = d - 1; dsign = " - ";}
 ab = Math.abs(b)
 ad = Math.abs(d)
 
-numbers = a + bsign + b + "i and " + c + dsign + d + "i"
+numbers = a + bsign + ab + "i and " + c + dsign + ad + "i"
