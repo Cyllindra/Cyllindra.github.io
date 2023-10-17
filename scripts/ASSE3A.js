@@ -18,7 +18,7 @@ if (c < 0){sign2 = "";}
 display_b = `${sign1} ${b}x`;
 display_c = `${sign2} ${c}`;
 
-if (b == 1){display_b = "x";}
+if (b == 1){display_b = "+x";}
 if (b == -1){display_b = "-x";}
 if (b == 0){display_b = "";}
 if (c == 0){display_c = "";}
