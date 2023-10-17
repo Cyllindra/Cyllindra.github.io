@@ -6,14 +6,19 @@ d = Math.ceil(Math.random()*20-10);
 bsign = " + ";
 dsign = " + ";
 
-if (a <= 0){a = a - 1;}
+if (a <= 0)
+{
+  a = a - 1;
+}
 if (b <= 0){
   b = b - 1; 
   bsign = " - ";
 }
-if (c <= 0){c = c - 1;}
-if (d <= 0)
+if (c <= 0)
 {
+  c = c - 1;
+}
+if (d <= 0){
   d = d - 1;
   dsign = " - ";
 }
