@@ -33,6 +33,8 @@ if (vert)
   ny2 = y2;
   ny3 = y3;
   ans = ans + 2*r + " - x, y)";
+  dvalue = "x";
+  svalue = "y";
 }
 else
 {
