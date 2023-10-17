@@ -10,6 +10,7 @@ x3 = Math.ceil(Math.random()*20-10);
 y3 = Math.ceil(Math.random()*20-10);
 p3 = "(" + x3 + ", " + y3 + ")";
 
+points = p1 + ", " + p2 + ", and " + p3;
 r = Math.ceil(Math.random()*20-10);
 
 vert = false
@@ -46,7 +47,5 @@ else
 np1 = "(" + nx1 + ", " + ny1 + ")";
 np2 = "(" + nx2 + ", " + ny2 + ")";
 np3 = "(" + nx3 + ", " + ny3 + ")";
-np4 = "(" + nx4 + ", " + ny4 + ")";
 
-points = p1 + ", " + p2 + ", and " + p3;
 npoints = np1 + ", " + np2 + ", and " + np3;
