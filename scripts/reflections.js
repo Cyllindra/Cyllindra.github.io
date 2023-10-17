@@ -13,6 +13,10 @@ p3 = "(" + x3 + ", " + y3 + ")";
 r = Math.ceil(Math.random()*20-10);
 
 vert = false
+svalue = "x";
+dvalue = "y";
+
+ans = "Ref(x, y) = (";
 
 if (Math.ceil(Math.random()*20-10) > 0)
 {
@@ -27,6 +31,7 @@ if (vert)
   ny1 = y1;
   ny2 = y2;
   ny3 = y3;
+  ans = ans + 2*r + " - x, y)";
 }
 else
 {
@@ -36,6 +41,7 @@ else
   nx1 = x1;
   nx2 = x2;
   nx3 = x3;
+  ans = ans + "x, " + 2*r + " - y)";
 }
 np1 = "(" + nx1 + ", " + ny1 + ")";
 np2 = "(" + nx2 + ", " + ny2 + ")";
@@ -44,4 +50,3 @@ np4 = "(" + nx4 + ", " + ny4 + ")";
 
 points = p1 + ", " + p2 + ", and " + p3;
 npoints = np1 + ", " + np2 + ", and " + np3;
-
