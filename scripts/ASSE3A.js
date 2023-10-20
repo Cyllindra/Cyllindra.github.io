@@ -25,11 +25,11 @@ if (c < 0){
 if (b == 0){poly = "x<sup>2</sup>" + sign2 + ac + " = 0";}
 else{poly = "x<sup>2</sup>" + sign1 + ab + "x" + sign2 + ac + " = 0";}
 
-sign1 = " - ";
-sign2 = " - ";
+sign1 = " + ";
+sign2 = " + ";
 
-if (x > 0){sign1 = " + ";}
-if (y > 0){sign2 = " + ";}
+if (x > 0){sign1 = " - ";}
+if (y > 0){sign2 = " - ";}
 
 factored = "(x " + sign1 + ax + ")(x " + sign2 + ay + ") = 0";
 
