@@ -31,4 +31,6 @@ sign2 = " + ";
 if (x > 0){sign1 = " - ";}
 if (y > 0){sign2 = " - ";}
 
+factored = "(x " + sign1 + ax + ")(x " + sign2 + ay + ") = 0";
+
 ans = "x = " + x*-1 + ", " + y*-1;
