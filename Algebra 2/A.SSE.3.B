@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/nelski.css">
+</head>
+
+<body>
+
+<script src="../scripts/nelski.js"></script>
+<script src="../scripts/ASSE3B.js"></script>
+
+<h1>A.SSE.A.3.A Factoring Quadratics</h1>
+<p>(Helpful CPM Links: 
+  <a href="https://homework.cpm.org/category/CC/textbook/cca2/chapter/5/lesson/5.2.1/problem/5-66?_gl=1*cmzxy2*_ga*MzAxODM4MTU3LjE2NjI0Nzk2NzA.*_ga_4L9RDK6H3D*MTY5NzcyOTIyMC42LjAuMTY5NzcyOTIyMC4wLjAuMA.." target="_blank">Link 1</a>|
+  <a href="https://homework.cpm.org/category/CC/textbook/cca2/chapter/5/lesson/5.2.3/problem/5-91?_gl=1*fxo00v*_ga*MzAxODM4MTU3LjE2NjI0Nzk2NzA.*_ga_4L9RDK6H3D*MTY5NzcyOTIyMC42LjEuMTY5NzcyOTI2Mi4wLjAuMA.." target="_blank">Link 2</a>)
+<br />
+  (Enlaces Útiles de CPM: 
+  <a href="https://homework.cpm.org/category/SCC/textbook/cca2s/chapter/5/lesson/5.2.1/problem/5-66?_gl=1*1238we4*_ga*MzAxODM4MTU3LjE2NjI0Nzk2NzA.*_ga_4L9RDK6H3D*MTY5ODA3NzEzOC45LjEuMTY5ODA3OTc3MC4wLjAuMA.." target="_blank">Vinculo 1</a>|
+  <a href="https://homework.cpm.org/category/SCC/textbook/cca2s/chapter/5/lesson/5.2.3/problem/5-91?_gl=1*xzrhnc*_ga*MzAxODM4MTU3LjE2NjI0Nzk2NzA.*_ga_4L9RDK6H3D*MTY5ODA3NzEzOC45LjEuMTY5ODA4MDA0MS4wLjAuMA.." target="_blank">Vinculo 2</a>)
+</p>
+
+<p>Consider the following polynomial.</p>
+
+<div id="problem">
+
+<script>
+print(poly);
+</script>
+
+<p>Find the zeros.</p>
+</div>
+
+<div id="hint" style="display: none">
+<h1>Hint</h1>
+
+Consider the coefficient in front of x: <script>print(b)</script>, <br />
+and the coefficient at the end: <script>print(c)</script>.<br /><br />
+We need two numbers that will <b><u>add up to <script>print(b)</script></u></b> and will <b><u>multiply together to make <script>print(c)</script></u></b>.<br /><br />
+Notice: (<script>print(x)</script>) + (<script>print(y)</script>) = <script>print(b)</script>, and (<script>print(x)</script>) &times; (<script>print(y)</script>) = <script>print(c)</script>.<br />
+So, we can rewrite <scritp>print(poly)</script> as <script>print(factored)</script>.
+
+</div>
+<br />
+<button onclick="show('hint')">Show/Hide Hint</button>
+<br />
+<div id="answer" style="display: none">
+<h1>Answer</h1>
+
+<script>
+print(ans);
+</script>
+</div>
+<br />
+<div>
+  <button onclick="show('answer')">Show/Hide Answer</button>
+</div>
+<br />
+<div>
+  <button onClick="window.location.reload();">New Problem</button>
+</div>
+</body>
+</html>
