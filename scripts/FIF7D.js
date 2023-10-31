@@ -19,10 +19,10 @@ rsign = `+`;
 nsign = `+`;
 
 if (az > z){zsign = `-`;}
-if (ar > z){rsign = `-`;}
-if (an > z){nsign = `-`;}
+if (ar > r){rsign = `-`;}
+if (an > n){nsign = `-`;}
 
-top = `(x ${zsign} ${az})(x ${rsign} ${ar})`;
+top    = `(x ${zsign} ${az})(x ${rsign} ${ar})`;
 bottom = `(x ${nsign} ${an})(x ${rsign} ${ar})`;
 
 tp = z + r;
