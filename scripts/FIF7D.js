@@ -45,6 +45,6 @@ if (atq > tq){tqsign = `-`;}
 if (abp > bp){bpsign = `-`;}
 if (abq > bq){bqsign = `-`;}
 
-rational = `\dfrac{x^2 ${tpsign} ${atp}x ${tqsign} ${atq}}{x^2 ${bpsign} ${abp}x ${bqsign} ${abq}}`;
+rational = `\\dfrac{x^2 ${tpsign} ${atp}x ${tqsign} ${atq}}{x^2 ${bpsign} ${abp}x ${bqsign} ${abq}}`;
 
 ans = `There are two holes -- a removable hole at ${r}, and a non-removable hole (or vertical asymptote) at ${n}$.`;
