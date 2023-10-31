@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/nelski.css">
+
+<link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+      integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+      crossorigin="anonymous"
+    />
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+      integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+      integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+      crossorigin="anonymous"
+      onload="renderMathInElement(document.body);"
+    ></script>
+
+</head>
+
+<body>
+
+<script src="../scripts/nelski.js"></script>
+<script src="../scripts/FIF7D.js"></script>
+
+<h1>F.IF.7.D Holes and Asymptotes</h1>
+(Removable and Non-removable discontinuities)
+<p>(Helpful CPM Links: 
+  <a href="" target="_blank">Link 1</a>|
+  <a href="" target="_blank">Link 2</a>)
+<br />
+  (Enlaces Útiles de CPM: 
+  <a href="" target="_blank">Vinculo 1</a>|
+  <a href="" target="_blank">Vinculo 2</a>)
+</p>
+
+<p>Consider the following rational function.</p>
+
+<div id="problem">
+
+<script>
+print(rational);
+</script>
+
+<p>Determine where the holes are at, whether they are removable or not, and where the vertical asymptote is at.</p>
+</div>
+
+<div id="hint" style="display: none">
+<h1>Hint</h1>
+
+We can <a href="">factor</a> the top and the bottom. <br />
+Factoring the top we get: <script>print(top)</script><br / >
+Factoring the bottom we get: <script>print(bottom)</script>
+
+</div>
+<br />
+<button onclick="show('hint')">Show/Hide Hint</button>
+<br />
+<div id="answer" style="display: none">
+<h1>Answer</h1>
+
+<script>
+print(ans);
+</script>
+</div>
+<br />
+<div>
+  <button onclick="show('answer')">Show/Hide Answer</button>
+</div>
+<br />
+<div>
+  <button onClick="window.location.reload();">New Problem</button>
+</div>
+</body>
+</html>
