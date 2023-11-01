@@ -22,8 +22,8 @@ if (az > z){zsign = `-`;}
 if (ar > r){rsign = `-`;}
 if (an > n){nsign = `-`;}
 
-top    = `(x ${zsign} ${az})(x ${rsign} ${ar})`;
-bottom = `(x ${nsign} ${an})(x ${rsign} ${ar})`;
+numerator   = `(x ${zsign} ${az})(x ${rsign} ${ar})`;
+denominator = `(x ${nsign} ${an})(x ${rsign} ${ar})`;
 
 tp = z + r;
 tq = z * r;
