@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/nelski.css">
+
+<link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+      integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+      crossorigin="anonymous"
+    />
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+      integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+      integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+      crossorigin="anonymous"
+      onload="renderMathInElement(document.body);"
+    ></script>
+
+</head>
+
+<body>
+
+<script src="../scripts/nelski.js"></script>
+<script src="../scripts/XXXX.js"></script>
+
+<h1>G.SRT.8.A Using Sine, Cosine and Tangent Functions</h1>
+<p>(Remember: SohCahToa)</p>
+<p>(Helpful CPM Link: 
+  <a href="../images/SohCahToa.jpg" target="_blank">Link 1</a>)
+<!-- <br />
+  (Enlaces Útiles de CPM: 
+  <a href="" target="_blank">Vinculo 1</a>|
+  <a href="" target="_blank">Vinculo 2</a>)
+-->
+</p>
+
+<div id="problem">
+
+Consider a right triangle with an angle equal to <script>print(`${angle}`)</script> degrees.
+The side next to that angle, and next to the right angle is equal to <script>print(`${adj}`)<\script>.<br />
+<p>
+Determine how long the other two sides are.
+</p>
+</div>
+
+<div id="hint" style="display: none">
+<h1>Hint</h1>
+
+Since the known side is next to the known angle and the right angle, it is the adjacent side.
+The unknown sides are the opposite (opp) and the hypotenuse (hyp).<br />
+To find the opposite, we use tangent (since we know the adjacent), specifically:
+<p>
+<script>print(tangent)</script>
+</p>
+We can now solve for the opposite side.<br /><br />
+To find the hypotenuse, we use cosine (since we know the adjacent), specifically:
+<p>
+<script>print(cosine)</script>
+</p>
+We can now solve for the hypotenuse.
+</div>
+<br />
+<button onclick="show('hint')">Show/Hide Hint</button>
+<br />
+<div id="answer" style="display: none">
+<h1>Answer</h1>
+The opposite side equals <script>print(`${opp}`)<script>.<br />
+The hypotenuse equals <script>print(`${hyp}`)<script>.
+
+</div>
+<br />
+<div>
+  <button onclick="show('answer')">Show/Hide Answer</button>
+</div>
+<br />
+<div>
+  <button onClick="window.location.reload();">New Problem</button>
+</div>
+</body>
+</html>
