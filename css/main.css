@@ -47,3 +47,7 @@ a.goback {
   display: inline-block;
   text-decoration: none;
 }
+
+.bold {
+  font-weight: bold;
+}
