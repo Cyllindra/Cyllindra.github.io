@@ -15,16 +15,6 @@
 
 <body>
   <h1>F.IF.7.D Holes and Asymptotes</h1>
-  (Removable and Non-removable discontinuities)
-  <p>
-    (Helpful CPM Link:
-    <a href="../images/Asymptotes.jpg" target="_blank">Link 1</a>)
-    <!-- <br />
-  (Enlaces Útiles de CPM: 
-  <a href="" target="_blank">Vinculo 1</a>|
-  <a href="" target="_blank">Vinculo 2</a>)
--->
-  </p>
 
   <p>Consider the following rational function.</p>
 
@@ -39,8 +29,8 @@
     </p>
   </div>
 
-  <div id="hint" style="display: none">
-    <h1>Hint</h1>
+  <details id="hint">
+    <summary>Hint</summary>
 
     We can factor the top and the bottom. <br />
     Factoring the top we get:
@@ -57,25 +47,27 @@
       print(`(x ${rsign} ${ar})`);
     </script>
     is in the numerator (the top) and the denominator (the bottom).
-  </div>
-  <br />
-  <button onclick="show('hint')">Show/Hide Hint</button>
-  <br />
-  <div id="answer" style="display: none">
-    <h1>Answer</h1>
+  </details>
+  <details id="answer">
+    <summary>Answer</summary>
 
-    <script>
-      print(ans);
-    </script>
-  </div>
+    There are two removable holes at:
+    <script>mathPrintInline(ans_1)</script>, and a non-removable hole (or vertical asymptote) at
+    <script>mathPrintInline(ans_2)</script>.
+  </details>
+  <details id="resources">
+    <summary>Resources</summary>
+
+    <h3>Helpful CPM Links</h3>
+    <ul>
+      <li>
+        <a href="../images/Asymptotes.jpg" target="_blank">Math Notes: Graphs with Asymptotes</a>
+      </li>
+    </ul>
+  </details>
   <br />
-  <div>
-    <button onclick="show('answer')">Show/Hide Answer</button>
-  </div>
-  <br />
-  <div>
-    <button onClick="window.location.reload();">New Problem</button>
-  </div>
+  <a href="./FIF7D.html">New problem</a>
+
 </body>
 
 </html>

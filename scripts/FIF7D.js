@@ -1,13 +1,13 @@
-z = Math.ceil(Math.random()*20-10);
-r = Math.ceil(Math.random()*20-10);
-n = Math.ceil(Math.random()*20-10);
+z = Math.ceil(Math.random() * 20 - 10);
+r = Math.ceil(Math.random() * 20 - 10);
+n = Math.ceil(Math.random() * 20 - 10);
 
-while (z == r){
-  r = Math.ceil(Math.random()*20-10);
+while (z == r) {
+  r = Math.ceil(Math.random() * 20 - 10);
 }
 
-while (n == r || n == z){
-  n = Math.ceil(Math.random()*20-10);
+while (n == r || n == z) {
+  n = Math.ceil(Math.random() * 20 - 10);
 }
 
 az = Math.abs(z);
@@ -18,11 +18,17 @@ zsign = `+`;
 rsign = `+`;
 nsign = `+`;
 
-if (az > z){zsign = `-`;}
-if (ar > r){rsign = `-`;}
-if (an > n){nsign = `-`;}
+if (az > z) {
+  zsign = `-`;
+}
+if (ar > r) {
+  rsign = `-`;
+}
+if (an > n) {
+  nsign = `-`;
+}
 
-numerator   = `(x ${zsign} ${az})(x ${rsign} ${ar})`;
+numerator = `(x ${zsign} ${az})(x ${rsign} ${ar})`;
 denominator = `(x ${nsign} ${an})(x ${rsign} ${ar})`;
 
 tp = z + r;
@@ -40,11 +46,20 @@ tqsign = `+`;
 bpsign = `+`;
 bqsign = `+`;
 
-if (atp > tp){tpsign = `-`;}
-if (atq > tq){tqsign = `-`;}
-if (abp > bp){bpsign = `-`;}
-if (abq > bq){bqsign = `-`;}
+if (atp > tp) {
+  tpsign = `-`;
+}
+if (atq > tq) {
+  tqsign = `-`;
+}
+if (abp > bp) {
+  bpsign = `-`;
+}
+if (abq > bq) {
+  bqsign = `-`;
+}
 
 rational = `\\dfrac{x^2 ${tpsign} ${atp}x ${tqsign} ${atq}}{x^2 ${bpsign} ${abp}x ${bqsign} ${abq}}`;
 
-ans = `There are two holes: a removable hole at ${-1*r}, and a non-removable hole (or vertical asymptote) at ${-1*n}.`;
+ans_1 = -1 * r;
+ans_2 = -1 * n;
