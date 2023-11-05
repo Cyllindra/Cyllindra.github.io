@@ -1,8 +1,10 @@
 body {
-  background-color: lightblue;
-}
+  width: 100%;
+  max-width: 820px;
+  margin: 0 auto;
 
-* {
-  color: navy;
-  font-family: Montserrat;
+  background: #eff1f5;
+  color: black;
+
+  font-family: sans-serif;
 }
