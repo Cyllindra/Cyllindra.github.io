@@ -1,61 +1,191 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" href="../css/nelski.css">
+  <head>
+    <link rel="stylesheet" href="../css/nelski.css" />
 
-<script src="../scripts/nelski.js"></script>
-<script src="../scripts/NCN2.js"></script>
-</head>
+    <script src="../scripts/nelski.js"></script>
+    <script src="../scripts/NCN2.js"></script>
+  </head>
 
-<body>
-<h1>
-  N.CN.2 Complex Number Arithmetic
-</h1>
-<p>Consider the two following complex numbers.</p>
+  <body>
+    <h1>N.CN.2 Complex Number Arithmetic</h1>
+    <p>Consider the two following complex numbers.</p>
 
-<div id="problem">
+    <div id="problem">
+      <script>
+        print(numbers);
+      </script>
 
-<script>
-print(numbers);
-</script>
+      <p>Add them. Subtract them. Multiply them.</p>
+    </div>
 
-<p>Add them. Subtract them. Multiply them.</p>
-</div>
-
-<div id="hint" style="display: none">
-<h1>Hint</h1>
-  Addition: Consider <script>print(numbers)</script>.<br />
-  We add: <script>print(a)</script> + <script>print(c)</script> = <script>print(a+c)</script> (real part)
-  We also add: <script>print(b)</script>i + <script>print(d)</script>i = <script>print(b+d)</script>i (imaginary part)<br /><br />
-  Subtraction: Consider <script>print(numbers)</script>.<br />
-  We subtract: <script>print(a)</script> - <script>print(c)</script> = <script>print(a-c)</script> (real part)<br />
-  We also subtract: <script>print(b + "i")</script> - (<script>print(d + "i")</script>) = <script>print(b-d)</script>i (imaginary part)<br /><br />
-  Multiplication: Consider <script>print(numbers)</script>. <br />
-  We multiply: <script>print(a)</script> &times; <script>print(c)</script> = <script>print(a*c)</script> (real)<br />
-  We multiply: <script>print(a)</script> &times; <script>print(d)</script>i = <script>print(a*d)</script>i (imaginary) <br />
-  We multiply: <script>print(b)</script>i &times; <script>print(c)</script> = <script>print(b*c)</script>i (imaginary) <br />
-  We multiply: <script>print(b)</script>i &times; <script>print(d)</script>i = <script>print(b*d)</script>i<sup>2</sup> (real)<br />
-  Note: i<sup>2</sup> = -1, so <script>print(b*d)</script>i<sup>2</sup> = <script>print(b*d)</script>&times; -1 = <script>print(-1*b*d)</script>.<br />
-Combine <script>print(a*c)</script>, <script>print(a*d)</script>i, <script>print(b*c)</script>i, and <script>print(-1*b*d)</script>.<br />
-</div>
-<br />
-<button onclick="show('hint')">Show/Hide Hint</button>
-<br />
-<div id="answer" style="display: none">
-<h1>
-  Answer
-</h1>
-<script>
-print(ans);
-</script>
-</div>
-<br />
-<div>
-  <button onclick="show('answer')">Show/Hide Answer</button>
-</div>
-<br />
-<div>
-  <button onClick="window.location.reload();">New Problem</button>
-</div>
-</body>
+    <div id="hint" style="display: none">
+      <h1>Hint</h1>
+      Addition: Consider
+      <script>
+        print(numbers);
+      </script>
+      .<br />
+      We add:
+      <script>
+        print(a);
+      </script>
+      +
+      <script>
+        print(c);
+      </script>
+      =
+      <script>
+        print(a + c);
+      </script>
+      (real part) We also add:
+      <script>
+        print(b);
+      </script>
+      i +
+      <script>
+        print(d);
+      </script>
+      i =
+      <script>
+        print(b + d);
+      </script>
+      i (imaginary part)<br /><br />
+      Subtraction: Consider
+      <script>
+        print(numbers);
+      </script>
+      .<br />
+      We subtract:
+      <script>
+        print(a);
+      </script>
+      -
+      <script>
+        print(c);
+      </script>
+      =
+      <script>
+        print(a - c);
+      </script>
+      (real part)<br />
+      We also subtract:
+      <script>
+        print(b + "i");
+      </script>
+      - (
+      <script>
+        print(d + "i");
+      </script>
+      ) =
+      <script>
+        print(b - d);
+      </script>
+      i (imaginary part)<br /><br />
+      Multiplication: Consider
+      <script>
+        print(numbers);
+      </script>
+      . <br />
+      We multiply:
+      <script>
+        print(a);
+      </script>
+      &times;
+      <script>
+        print(c);
+      </script>
+      =
+      <script>
+        print(a * c);
+      </script>
+      (real)<br />
+      We multiply:
+      <script>
+        print(a);
+      </script>
+      &times;
+      <script>
+        print(d);
+      </script>
+      i =
+      <script>
+        print(a * d);
+      </script>
+      i (imaginary) <br />
+      We multiply:
+      <script>
+        print(b);
+      </script>
+      i &times;
+      <script>
+        print(c);
+      </script>
+      =
+      <script>
+        print(b * c);
+      </script>
+      i (imaginary) <br />
+      We multiply:
+      <script>
+        print(b);
+      </script>
+      i &times;
+      <script>
+        print(d);
+      </script>
+      i =
+      <script>
+        print(b * d);
+      </script>
+      i<sup>2</sup> (real)<br />
+      Note: i<sup>2</sup> = -1, so
+      <script>
+        print(b * d);
+      </script>
+      i<sup>2</sup> =
+      <script>
+        print(b * d);
+      </script>
+      &times; -1 =
+      <script>
+        print(-1 * b * d);
+      </script>
+      .<br />
+      Combine
+      <script>
+        print(a * c);
+      </script>
+      ,
+      <script>
+        print(a * d);
+      </script>
+      i,
+      <script>
+        print(b * c);
+      </script>
+      i, and
+      <script>
+        print(-1 * b * d);
+      </script>
+      .<br />
+    </div>
+    <br />
+    <button onclick="show('hint')">Show/Hide Hint</button>
+    <br />
+    <div id="answer" style="display: none">
+      <h1>Answer</h1>
+      <script>
+        print(ans);
+      </script>
+    </div>
+    <br />
+    <div>
+      <button onclick="show('answer')">Show/Hide Answer</button>
+    </div>
+    <br />
+    <div>
+      <button onClick="window.location.reload();">New Problem</button>
+    </div>
+  </body>
 </html>

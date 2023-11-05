@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" href="../css/nelski.css">
+  <head>
+    <link rel="stylesheet" href="../css/nelski.css" />
 
-<link
+    <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
       integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
@@ -26,62 +26,73 @@
       crossorigin="anonymous"
       onload="renderMathInElement(document.body);"
     ></script>
+  </head>
 
-</head>
+  <body>
+    <script src="../scripts/nelski.js"></script>
+    <script src="../scripts/FIF7D.js"></script>
 
-<body>
-
-<script src="../scripts/nelski.js"></script>
-<script src="../scripts/FIF7D.js"></script>
-
-<h1>F.IF.7.D Holes and Asymptotes</h1>
-(Removable and Non-removable discontinuities)
-<p>(Helpful CPM Link: 
-  <a href="../images/Asymptotes.jpg" target="_blank">Link 1</a>)
-<!-- <br />
+    <h1>F.IF.7.D Holes and Asymptotes</h1>
+    (Removable and Non-removable discontinuities)
+    <p>
+      (Helpful CPM Link:
+      <a href="../images/Asymptotes.jpg" target="_blank">Link 1</a>)
+      <!-- <br />
   (Enlaces Útiles de CPM: 
   <a href="" target="_blank">Vinculo 1</a>|
   <a href="" target="_blank">Vinculo 2</a>)
 -->
-</p>
+    </p>
 
-<p>Consider the following rational function.</p>
+    <p>Consider the following rational function.</p>
 
-<div id="problem">
+    <div id="problem">
+      <script>
+        print("\\[" + rational + "\\]");
+      </script>
 
-<script>
-print("\\[" + rational + "\\]");
-</script>
+      <p>
+        Determine where the holes are at, whether they are removable or not, and
+        where the vertical asymptote is at.
+      </p>
+    </div>
 
-<p>Determine where the holes are at, whether they are removable or not, and where the vertical asymptote is at.</p>
-</div>
+    <div id="hint" style="display: none">
+      <h1>Hint</h1>
 
-<div id="hint" style="display: none">
-<h1>Hint</h1>
+      We can factor the top and the bottom. <br />
+      Factoring the top we get:
+      <script>
+        print(numerator);
+      </script>
+      <br / > Factoring the bottom we get:
+      <script>
+        print(denominator);
+      </script>
+      <br />
+      Notice that
+      <script>
+        print(`(x ${rsign} ${ar})`);
+      </script>
+      is in the numerator (the top) and the denominator (the bottom).
+    </div>
+    <br />
+    <button onclick="show('hint')">Show/Hide Hint</button>
+    <br />
+    <div id="answer" style="display: none">
+      <h1>Answer</h1>
 
-We can factor the top and the bottom. <br />
-Factoring the top we get: <script>print(numerator)</script><br / >
-Factoring the bottom we get: <script>print(denominator)</script><br />
-Notice that <script>print(`(x ${rsign} ${ar})`)</script> is in the numerator (the top) and the denominator (the bottom).
-
-</div>
-<br />
-<button onclick="show('hint')">Show/Hide Hint</button>
-<br />
-<div id="answer" style="display: none">
-<h1>Answer</h1>
-
-<script>
-print(ans);
-</script>
-</div>
-<br />
-<div>
-  <button onclick="show('answer')">Show/Hide Answer</button>
-</div>
-<br />
-<div>
-  <button onClick="window.location.reload();">New Problem</button>
-</div>
-</body>
+      <script>
+        print(ans);
+      </script>
+    </div>
+    <br />
+    <div>
+      <button onclick="show('answer')">Show/Hide Answer</button>
+    </div>
+    <br />
+    <div>
+      <button onClick="window.location.reload();">New Problem</button>
+    </div>
+  </body>
 </html>

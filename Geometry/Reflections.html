@@ -1,50 +1,85 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" href="../css/nelski.css">
-</head>
+  <head>
+    <link rel="stylesheet" href="../css/nelski.css" />
+  </head>
 
-<body>
+  <body>
+    <script src="../scripts/nelski.js"></script>
+    <script src="../scripts/reflections.js"></script>
 
-<script src="../scripts/nelski.js"></script>
-<script src="../scripts/reflections.js"></script>
+    <h1>Reflections as Functions</h1>
+    <p>Consider the following reflection.</p>
 
-<h1>Reflections as Functions</h1>
-<p>Consider the following reflection.</p>
+    <div id="problem">
+      A triangle is reflected over a line.<br />
+      The points of the triangle,
+      <script>
+        print(points);
+      </script>
+      , are reflected to the points
+      <script>
+        print(npoints);
+      </script>
+      . Determine the function that takes the original points to the reflected
+      points.
+    </div>
 
-<div id="problem">
-A triangle is reflected over a line.<br />
-The points of the triangle, <script>print(points)</script>, are reflected to the points <script>print(npoints)</script>.
+    <div id="hint" style="display: none">
+      <h1>Hint</h1>
 
-Determine the function that takes the original points to the reflected points.
-</div>
+      We notice that the
+      <script>
+        print(svalue);
+      </script>
+      -values are the same. Looking at the
+      <script>
+        print(dvalue);
+      </script>
+      -values, we notice that they are different. Specifically, we notice that
+      any of the old
+      <script>
+        print(dvalue);
+      </script>
+      -values plus the corresponding new
+      <script>
+        print(dvalue);
+      </script>
+      -value always equals
+      <script>
+        print(2 * r);
+      </script>
+      . So, our new
+      <script>
+        print(dvalue);
+      </script>
+      must equal
+      <script>
+        print(2 * r);
+      </script>
+      minus the old
+      <script>
+        print(dvalue);
+      </script>
+      -value.
+    </div>
+    <br />
+    <button onclick="show('hint')">Show/Hide Hint</button>
+    <br />
+    <div id="answer" style="display: none">
+      <h1>Answer</h1>
 
-<div id="hint" style="display: none">
-<h1>Hint</h1>
-
-We notice that the <script>print(svalue)</script>-values are the same.
-Looking at the <script>print(dvalue)</script>-values, we notice that they are different.
-Specifically, we notice that any of the old <script>print(dvalue)</script>-values plus the corresponding new <script>print(dvalue)</script>-value always equals <script>print(2*r)</script>.
-So, our new <script>print(dvalue)</script> must equal <script>print(2*r)</script> minus the old <script>print(dvalue)</script>-value.
-
-</div>
-<br />
-<button onclick="show('hint')">Show/Hide Hint</button>
-<br />
-<div id="answer" style="display: none">
-<h1>Answer</h1>
-
-<script>
-print(ans);
-</script>
-</div>
-<br />
-<div>
-  <button onclick="show('answer')">Show/Hide Answer</button>
-</div>
-<br />
-<div>
-  <button onClick="window.location.reload();">New Problem</button>
-</div>
-</body>
+      <script>
+        print(ans);
+      </script>
+    </div>
+    <br />
+    <div>
+      <button onclick="show('answer')">Show/Hide Answer</button>
+    </div>
+    <br />
+    <div>
+      <button onClick="window.location.reload();">New Problem</button>
+    </div>
+  </body>
 </html>
