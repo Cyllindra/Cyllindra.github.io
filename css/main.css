@@ -17,12 +17,12 @@ body {
   }
 
   body {
-    background: #060606;
+    background: #1c2125;
     color: white;
   }
 
   a {
-    color: #00eeff !important;
+    color: #00c3ff !important;
   }
 }
 
@@ -41,4 +41,9 @@ li {
 
 a {
   color: #1e66f5;
+}
+
+a.goback {
+  display: inline-block;
+  text-decoration: none;
 }
