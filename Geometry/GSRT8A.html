@@ -1,83 +1,91 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <link rel="stylesheet" href="../css/main.css" />
+<link rel="stylesheet" href="../css/main.css" />
 
-  <link rel="stylesheet" href="../css/library/katex@0.16.9.css" />
-  <script defer src="../scripts/library/katex/katex@0.16.9.js"></script>
-  <script defer src="../scripts/library/katex/auto-render@0.16.9.js"
-    onload="renderMathInElement(document.body);"></script>
+<link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+      integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+      crossorigin="anonymous"
+    />
 
-  <script src="../scripts/ASSE3A.js"></script>
-  <script src="../scripts/library/main.js"></script>
-  <script src="../scripts/GSRT8A.js"></script>
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+      integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+      crossorigin="anonymous"
+    ></script>
 
-  <title>G.SRT.8.A: Using Sine, Cosine and Tangent Functions | Cyllindra's Website</title>
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+      integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+      crossorigin="anonymous"
+      onload="renderMathInElement(document.body);"
+    ></script>
+
 </head>
 
 <body>
-  <a class="goback" href="../index.html">&larr; Go back</a>
-  <h1>G.SRT.8.A Using Sine, Cosine and Tangent Functions</h1>
-  <p>
-    <span class="bold">Remember:</span>
-    <abbr title="sine = opposite &div; hypotenuse">Soh</abbr>
-    <abbr title="cosine = adjacent &div; hypotenuse">Cah</abbr>
-    <abbr title="tangent = opposite &div; adjacent">Toa</abbr>
-  </p>
 
-  <div id="problem">
+<script src="../scripts/nelski.js"></script>
+<script src="../scripts/GSRT8A.js"></script>
 
-    <p>
-      Consider a right triangle with an angle equal to
-      <script>mathPrintInline(`${angle}`)</script> degrees.
-      The side next to that angle, and next to the right angle is equal to
-      <script>mathPrintInline(`${adj}`)</script>.
-    </p>
-    <p>
-      Determine how long the other two sides are.
-    </p>
-  </div>
+<h1>G.SRT.8.A Using Sine, Cosine and Tangent Functions</h1>
+<p>(Remember: SohCahToa)</p>
+<p>(Helpful CPM Link: 
+  <a href="../images/SohCahToa.jpg" target="_blank">Link 1</a>)
+<!-- <br />
+  (Enlaces Útiles de CPM: 
+  <a href="" target="_blank">Vinculo 1</a>|
+  <a href="" target="_blank">Vinculo 2</a>)
+-->
+</p>
 
-  <details>
-    <summary>Hint</summary>
-    <p>
-      Since the known side is next to the known angle and the right angle, it is the adjacent side.
-      The unknown sides are the opposite (opp) and the hypotenuse (hyp).
-    </p>
-    <p>
-      To find the opposite, we use tangent (since we know the adjacent), specifically:
-    </p>
-    <p>
-      <script>mathPrintBlock(`\\tan\\theta=\\dfrac{o}{${adj}}`)</script>
-    </p>
-    <p>We can now solve for the opposite side.</p>
-    <p>To find the hypotenuse, we use cosine (since we know the adjacent), specifically:</p>
-    <p>
-      <script>mathPrintBlock(`\\cos\\theta=\\dfrac{${adj}}{h}`)</script>
-    </p>
-    We can now solve for the hypotenuse.
-  </details>
-  <details>
-    <summary>Answer</summary>
-    <script>mathPrintBlock(`o = ${opp} \\qquad h = ${hyp}`) </script>
-  </details>
-  <details id="resources">
-    <summary>Resources</summary>
+<div id="problem">
 
-    <h3>Helpful CPM Links</h3>
-    <ul>
-      <li>
-        <a href="../images/SohCahToa.jpg" target="_blank">
-          Math Notes: Trigonometric Ratios
-        </a>
-      </li>
-    </ul>
-  </details>
+Consider a right triangle with an angle equal to <script>print(`${angle}`)</script> degrees.
+The side next to that angle, and next to the right angle is equal to <script>print(`${adj}`)<\script>.<br />
+<p>
+Determine how long the other two sides are.
+</p>
+</div>
 
+<div id="hint" style="display: none">
+<h1>Hint</h1>
 
-  <br />
-  <a href="./ASSE3A.html">New problem</a>
+Since the known side is next to the known angle and the right angle, it is the adjacent side.
+The unknown sides are the opposite (opp) and the hypotenuse (hyp).<br />
+To find the opposite, we use tangent (since we know the adjacent), specifically:
+<p>
+<script>print("\\[" + tangent + "\\]")</script>
+</p>
+We can now solve for the opposite side.<br /><br />
+To find the hypotenuse, we use cosine (since we know the adjacent), specifically:
+<p>
+<script>print("\\[" + cosine + "\\]")</script>
+</p>
+We can now solve for the hypotenuse.
+</div>
+<br />
+<button onclick="show('hint')">Show/Hide Hint</button>
+<br />
+<div id="answer" style="display: none">
+<h1>Answer</h1>
+The opposite side equals <script>print(`${opp}`)<script>.<br />
+The hypotenuse equals <script>print(`${hyp}`)<script>.
+
+</div>
+<br />
+<div>
+  <button onclick="show('answer')">Show/Hide Answer</button>
+</div>
+<br />
+<div>
+  <button onClick="window.location.reload();">New Problem</button>
+</div>
 </body>
-
 </html>
