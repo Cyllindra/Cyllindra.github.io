@@ -4,7 +4,10 @@ adj = Math.ceil(Math.random()*26+4);
 angle = angle * Math.PI / 180;
 
 opp = adj * Math.tan(angle);
+opp = opp.toFixed(2);
 
 hyp = adj / Math.cos(angle);
+hyp = hyp.toFixed(2);
 
-tangent = `tan(\\theta)=\\dfrac{x^2 ${tpsign} ${atp}x ${tqsign} ${atq}}{x^2 ${bpsign} ${abp}x ${bqsign} ${abq}}`;
+tangent = `tan(\\theta)=\\dfrac{${opp}}{${adj}}`;
+cosine = `cos(\\theta)=\\dfrac{${adj}}{${hyp}}`;
