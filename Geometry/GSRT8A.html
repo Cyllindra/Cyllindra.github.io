@@ -55,31 +55,33 @@ Determine how long the other two sides are.
 </div>
 
 <div id="hint" style="display: none">
-<h1>Hint</h1>
-
-Since the known side is next to the known angle and the right angle, it is the adjacent side.
-The unknown sides are the opposite (opp) and the hypotenuse (hyp).<br />
-To find the opposite, we use tangent (since we know the adjacent), specifically:
-<p>
-<script>print("\\[" + tangent + "\\]")</script>
-</p>
-We can now solve for the opposite side.<br /><br />
-To find the hypotenuse, we use cosine (since we know the adjacent), specifically:
-<p>
-<script>print("\\[" + cosine + "\\]")</script>
-</p>
-We can now solve for the hypotenuse.
+  <h1>Hint</h1>
+  Since the known side is next to the known angle and the right angle, it is the adjacent side.
+  The unknown sides are the opposite (opp) and the hypotenuse (hyp).<br />
+  To find the opposite, we use tangent (since we know the adjacent), specifically:
+  <p>
+    <script>print("\\[" + tangent + "\\]")</script>
+  </p>
+  We can now solve for the opposite side.<br /><br />
+  To find the hypotenuse, we use cosine (since we know the adjacent), specifically:
+  <p>
+    <script>print("\\[" + cosine + "\\]")</script>
+  </p>
+  We can now solve for the hypotenuse.
 </div>
+
 <br />
 <button onclick="show('hint')">Show/Hide Hint</button>
 <br />
-<div id="answer" style="display: none">
-<h1>Answer</h1>
-The opposite side equals <script>print(`${opp}`)<script>.<br />
-The hypotenuse equals <script>print(`${hyp}`)<script>.
 
+<div id="answer" style="display: none">
+  <h1>Answer</h1>
+  The opposite side equals <script>print(`${opp}`)<script>.<br />
+  The hypotenuse equals <script>print(`${hyp}`)<script>.
 </div>
+
 <br />
+
 <div>
   <button onclick="show('answer')">Show/Hide Answer</button>
 </div>
