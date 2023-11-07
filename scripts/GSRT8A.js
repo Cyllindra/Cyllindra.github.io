@@ -9,5 +9,5 @@ opp = opp.toFixed(2);
 hyp = adj / Math.cos(radians);
 hyp = hyp.toFixed(2);
 
-tangent = `tan(\\theta)=\\dfrac{${opp}}{${adj}}`;
-cosine = `cos(\\theta)=\\dfrac{${adj}}{${hyp}}`;
+tangent = `tan(${angle})=\\dfrac{opp}{${adj}}`;
+cosine = `cos(${angle})=\\dfrac{${adj}}{hyp}`;
