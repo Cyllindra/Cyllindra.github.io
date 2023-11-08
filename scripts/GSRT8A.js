@@ -1,5 +1,5 @@
-angle = Math.ceil(Math.random()*71+9);
-adj = Math.ceil(Math.random()*26+4);
+angle = Math.ceil(Math.random() * 71 + 9);
+adj = Math.ceil(Math.random() * 26 + 4);
 
 radians = angle * Math.PI / 180;
 

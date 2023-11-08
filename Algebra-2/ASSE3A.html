@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="../css/main.css" />
+
+  <link rel="stylesheet" href="../css/library/katex@0.16.9.css" />
+  <script defer src="../scripts/library/katex/katex@0.16.9.js"></script>
+  <script defer src="../scripts/library/katex/auto-render@0.16.9.js"
+    onload="renderMathInElement(document.body);"></script>
+
+  <script src="../scripts/ASSE3A.js"></script>
+  <script src="../scripts/library/main.js"></script>
+
+  <title>A.SSE.A.3.A: Factoring Quadratics | Cyllindra's Website</title>
+</head>
+
+<body>
+  <a class="goback" href="../index.html">&larr; Go back</a>
+  <h1>A.SSE.A.3.A Factoring Quadratics</h1>
+  <p>Consider the following polynomial.</p>
+
+  <div id="problem">
+    <script>
+      mathPrintBlock(poly);
+    </script>
+
+    <p>Find the zeros.</p>
+  </div>
+
+  <details>
+    <summary>Hint</summary>
+
+    Consider the coefficient in front of the
+    <script>mathPrintInline('x')</script>:
+    <script>
+      mathPrintInline(b);
+    </script>
+    , <br />
+    and the coefficient at the end:
+    <script>
+      mathPrintInline(c);
+    </script>
+    .<br /><br />
+    We need two numbers that will
+    <b><u>add up to
+        <script>
+          mathPrintInline(b);
+        </script>
+      </u></b>
+    and will
+    <b><u>multiply together to make
+        <script>
+          mathPrintInline(c);
+        </script>
+      </u></b>.<br /><br />
+    Notice:
+    <script>
+      mathPrintInline(`\\left(${x}\\right) + \\left(${y}\\right)=${b}`);
+    </script>
+    , and
+    <script>
+      mathPrintInline(`\\left(${x}\\right) \\times \\left(${y}\\right)=${c}`);
+    </script>
+    .<br />
+    So, we can rewrite
+    <script>
+      mathPrintInline(poly);
+    </script>
+    as
+    <script>
+      mathPrintInline(factored);
+    </script>
+    .
+  </details>
+  <details id="answer">
+    <summary>Answer</summary>
+
+    <script>
+      mathPrintBlock(ans);
+    </script>
+  </details>
+  <details id="resources">
+    <summary>Resources</summary>
+
+    <h3>Helpful CPM Links</h3>
+    <ul>
+      <li>
+        <a href="https://homework.cpm.org/category/CC/textbook/cca2/chapter/5/lesson/5.2.1/problem/5-66"
+          target="_blank">
+          CPM Homework Help: 5.2.1 (5-66)
+        </a>
+      </li>
+      <li>
+        <a href="https://homework.cpm.org/category/CC/textbook/cca2/chapter/5/lesson/5.2.3/problem/5-91"
+          target="_blank">
+          CPM Homework Help: 5.2.3 (5-91)
+        </a>
+      </li>
+    </ul>
+
+    <h3>Enlaces Útiles de CPM</h3>
+    <ul>
+      <li>
+        <a href="https://homework.cpm.org/category/SCC/textbook/cca2s/chapter/5/lesson/5.2.1/problem/5-66"
+          target="_blank">
+          CPM Ayuda de Tarea: 5.2.1 (5-66)
+        </a>
+      </li>
+      <li>
+        <a href="https://homework.cpm.org/category/SCC/textbook/cca2s/chapter/5/lesson/5.2.3/problem/5-91"
+          target="_blank">
+          CPM Ayuda de Tarea: 5.2.3 (5-91)
+        </a>
+      </li>
+    </ul>
+  </details>
+
+  <br />
+
+  <a href="./ASSE3A.html">New problem</a>
+</body>
+
+</html>

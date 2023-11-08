@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="../css/main.css" />
+
+  <link rel="stylesheet" href="../css/library/katex@0.16.9.css" />
+  <script defer src="../scripts/library/katex/katex@0.16.9.js"></script>
+  <script defer src="../scripts/library/katex/auto-render@0.16.9.js"
+    onload="renderMathInElement(document.body);"></script>
+
+  <script src="../scripts/NCN2.js"></script>
+  <script src="../scripts/library/main.js"></script>
+
+  <title>N.CN.2: Complex Number Arithmetic | Cyllindra's Website</title>
+</head>
+
+<body>
+  <a class="goback" href="../index.html">&larr; Go back</a>
+
+  <h1>N.CN.2 Complex Number Arithmetic</h1>
+  <p>Consider the two following complex numbers.</p>
+
+  <div id="problem">
+    <script>
+      mathPrintBlock(`${number_1} \\qquad ${number_2}`);
+    </script>
+
+    <p>Add them. Subtract them. Multiply them.</p>
+  </div>
+
+  <details id="hint">
+    <summary>Hint</summary>
+    <div>
+      <div>
+        <h2>Addition</h2>
+        <p>
+          Consider
+          <script>mathPrintInline(number_1)</script> and&nbsp;
+          <script>mathPrintInline(number_2)</script>.
+        </p>
+        <p>
+          We add:
+          <script>
+            mathPrintInline(`${a} + ${c} = ${a + c}`);
+          </script>
+
+          (the real part) and also:
+          <script>
+            mathPrintInline(`${b} i + ${d} i = ${b + d} i`);
+          </script>
+          (the imaginary part).
+        </p>
+      </div>
+
+      <div>
+        <h2>Subtraction</h2>
+        <p>
+          Consider
+          <script>mathPrintInline(number_1)</script> and&nbsp;
+          <script>mathPrintInline(number_2)</script>.
+        </p>
+        <p>
+          We subtract:
+          <script>
+            mathPrintInline(`${a} - ${c} = ${a - c}`);
+          </script>
+          (the real part) and also:
+          <script>
+            mathPrintInline(`${b}= ${b - d} i`);
+          </script>
+          (the imaginary part).
+        </p>
+      </div>
+
+      <div>
+        <h2>Multiplication</h2>
+        <p>
+          Consider
+          <script>mathPrintInline(number_1)</script> and&nbsp;
+          <script>mathPrintInline(number_2)</script>.
+        </p>
+
+        <p></p>
+        We multiply:
+        <script>
+          mathPrintInline(`${a} \\times ${c} = ${a * c}`);
+        </script><br />
+
+        We multiply:
+        <script>
+          mathPrintInline(`${a} \\times ${d} i = ${a * d} i`);
+        </script><br />
+
+        We multiply:
+        <script>
+          mathPrintInline(`${b} i \\times ${c} = ${b * c} i`);
+        </script><br />
+        We multiply:
+        <script>
+          mathPrintInline(`${b} i \\times ${d} i = ${b * d} i^2 = ${b * d * -1}`);
+        </script>
+        </p>
+
+        <p>
+          Combine
+          <script>
+            mathPrintInline(`${a * c} + ${a * d} i + ${b * c} i + ${b * d} i^2 = ${a * c + a * d + b * c + b * d * -1}`);
+          </script>.
+        </p>
+      </div>
+    </div>
+  </details>
+
+  <details id="answer">
+    <summary>Answer</summary>
+    <script>
+      mathPrintBlock(ans);
+    </script>
+  </details>
+
+  <br />
+
+  <a href="./NCN2.html" target="_blank">New problem</a>
+</body>
+
+</html>
