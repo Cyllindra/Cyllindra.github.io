@@ -1,4 +1,7 @@
 b = Math.ceil(Math.random() * 20 - 10);
+if (b <= 0) {
+  b = b - 1;
+}
 c = b^2
 while (c >= b^2){
   c = Math.ceil(Math.random() * 20 - 10);
@@ -6,9 +9,6 @@ while (c >= b^2){
 
 diff = (b/2)^2 + c;
 
-if (b <= 0) {
-  b = b - 1;
-}
 if (c <= 0) {
   c = c - 1;
 }
