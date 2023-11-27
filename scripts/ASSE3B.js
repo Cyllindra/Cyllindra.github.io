@@ -44,3 +44,7 @@ step4 = `\\sqrt{(x ${bsign} ${ab/2})^2} = \\pm\\sqrt{${-diff}}`;
 step5 = `x ${bsign} ${ab/2} = \\pm\\sqrt{${-diff}}`;
 
 answer = `x = ${-b/2}\\pm\\sqrt{${-diff}}`;
+
+factor1 = (-b/2)+(-diff)^(1/2);
+factor2 = (-b/2)-(-diff)^(1/2);
+
