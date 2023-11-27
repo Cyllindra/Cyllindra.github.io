@@ -7,7 +7,7 @@ while (c > b**2){
   c = Math.ceil(Math.random() * 20 - 10);
 }
 
-diff = (b/2)^2 + c;
+diff = -(b/2)^2 + c;
 
 if (c <= 0) {
   c = c - 1;
