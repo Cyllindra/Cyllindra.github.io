@@ -4,8 +4,7 @@ if (b <= 0) {
 }
 c = b**2 + 1;
 while (c > b**2){
-//  c = Math.ceil(Math.random() * 20 - 10);
-  c = -40;
+  c = Math.ceil(Math.random() * 20 - 10);
 }
 
 diff = (b/2)^2 + c;
