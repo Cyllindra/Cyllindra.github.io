@@ -3,9 +3,9 @@ if (b <= 0) {
   b = b - 1;
 }
 c = b**2 + 1;
-/* while (c > b**2){
+while (c > b**2){
   c = Math.ceil(Math.random() * 20 - 10);
-} */
+}
 
 diff = (b/2)^2 + c;
 
