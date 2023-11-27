@@ -2,8 +2,8 @@ b = Math.ceil(Math.random() * 20 - 10);
 if (b <= 0) {
   b = b - 1;
 }
-c = b^2 + 1;
-/* while (c > b^2){
+c = b**2 + 1;
+/* while (c > b**2){
   c = Math.ceil(Math.random() * 20 - 10);
 } */
 
@@ -42,7 +42,7 @@ step2 = `(x ${bsign} ${ab/2})^2 - ${(b/2)^2} ${csign} ${ac} = 0`;
 
 step3 = `(x ${bsign} ${ab/2})^2 = ${(b/2)^2+c}`;
 
-step4 = `\sqrt((x ${bsign} ${ab/2})^2) = \\pm\\sqrt(${(b/2)^2+c})`;
+step4 = `\\sqrt((x ${bsign} ${ab/2})^2) = \\pm\\sqrt(${(b/2)^2+c})`;
 
 step5 = `x ${bsign} ${ab/2} = \\pm\\sqrt(${(b/2)^2+c})`;
 
