@@ -39,8 +39,8 @@ step2 = `(x ${bsign} ${ab/2})^2 - ${(b/2)**2} ${csign} ${ac} = 0`;
 
 step3 = `(x ${bsign} ${ab/2})^2 = ${-diff}`;
 
-step4 = `\\sqrt(x ${bsign} ${ab/2}^2) = \\pm\\sqrt(${-diff})`;
+step4 = `\\sqrt (x ${bsign} ${ab/2})^2 = \\pm\\sqrt ${-diff} `;
 
-step5 = `x ${bsign} ${ab/2} = \\pm\\sqrt(${-diff})`;
+step5 = `x ${bsign} ${ab/2} = \\pm\\sqrt ${-diff}`;
 
-answer = `x = ${-b/2}\\pm\\sqrt(${-diff})`;
+answer = `x = ${-b/2}\\pm\\sqrt ${-diff} `;
