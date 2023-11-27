@@ -7,14 +7,11 @@ while (c > b**2){
   c = Math.ceil(Math.random() * 20 - 10);
 }
 
-diff = -(b/2)^2 + c;
-
 if (c <= 0) {
   c = c - 1;
 }
-if (diff <= 0) {
-  diff = diff - 1;
-}
+
+diff = c - (b/2)**2;
 
 ab = Math.abs(b);
 ac = Math.abs(c);
@@ -40,10 +37,10 @@ step1 = `x^2 + 2(${bsign}${ab/2})x + ${(b/2)**2} - ${(b/2)**2} ${csign} ${ac} = 
 
 step2 = `(x ${bsign} ${ab/2})^2 - ${(b/2)**2} ${csign} ${ac} = 0`;
 
-step3 = `(x ${bsign} ${ab/2})^2 = ${(b/2)**2+c}`;
+step3 = `(x ${bsign} ${ab/2})^2 = ${-diff}`;
 
-step4 = `\\sqrt((x ${bsign} ${ab/2}^2) = \\pm\\sqrt(${(b/2)**2+c})`;
+step4 = `\\sqrt((x ${bsign} ${ab/2}^2) = \\pm\\sqrt(${-diff})`;
 
-step5 = `x ${bsign} ${ab/2} = \\pm\\sqrt(${(b/2)**2+c})`;
+step5 = `x ${bsign} ${ab/2} = \\pm\\sqrt(${-diff})`;
 
-answer = `x = ${-b/2}\\pm\\sqrt(${(b/2)**2+c})`;
+answer = `x = ${-b/2}\\pm\\sqrt(${-diff})`;
