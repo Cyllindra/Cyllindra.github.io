@@ -40,9 +40,9 @@ step1 = `x^2 + 2(${bsign}${ab/2})x + ${(b/2)^2} - ${(b/2)^2} ${csign} ${ac} = 0`
 
 step2 = `(x ${bsign} ${ab/2})^2 - ${(b/2)^2} ${csign} ${ac} = 0`;
 
-/*
 step3 = `(x ${bsign} ${ab/2})^2 = ${(b/2)^2+c}`;
 
+/*
 step4 = `\sqrt((x ${bsign} ${ab/2})^2) = \pm\sqrt(${(b/2)^2+c})`;
 
 step5 = `x ${bsign} ${ab/2} = \pm\sqrt(${(b/2)^2+c})`;
