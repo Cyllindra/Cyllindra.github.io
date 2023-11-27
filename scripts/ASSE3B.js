@@ -47,4 +47,3 @@ answer = `x = ${-b/2}\\pm\\sqrt{${-diff}}`;
 
 factor1 = Math.round(((-b/2)+(-diff)**(1/2))*100)/100;
 factor2 = Math.round(((-b/2)-(-diff)**(1/2))*100)/100;
-
